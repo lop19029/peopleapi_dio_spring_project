@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -28,9 +29,13 @@ public class Person {
     @Column(nullable = false, unique = true)
     private String cpf;
 
-    //private LocalDate birthDate;
+    private LocalDate birthDate;
 
     //Fetch -> Query  Cascade -> Insertion through Person insertion
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Phone> phone;
+
+    public Long getId() {
+        return id;
+    }
 }
