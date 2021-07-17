@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import one.digitalinnovation.personapi.entity.Technology;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.Valid;
@@ -16,7 +17,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PersonDTO {
+public class DevDTO {
 
     private Long id;
 
@@ -38,4 +39,8 @@ public class PersonDTO {
     @Valid
     @NotEmpty
     private List<PhoneDTO> phones;
+
+    @Valid
+    @NotEmpty
+    private List<Technology> technologies;
 }
