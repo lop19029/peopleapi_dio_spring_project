@@ -1,6 +1,9 @@
 package one.digitalinnovation.developerapi.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import one.digitalinnovation.developerapi.enums.PhoneType;
 
 import javax.persistence.*;
