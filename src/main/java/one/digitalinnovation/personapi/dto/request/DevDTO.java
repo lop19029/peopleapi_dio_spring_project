@@ -5,8 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import one.digitalinnovation.personapi.entity.Technology;
+import one.digitalinnovation.personapi.enums.ExpertiseArea;
+import one.digitalinnovation.personapi.enums.PhoneType;
 import org.hibernate.validator.constraints.br.CPF;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -35,6 +39,9 @@ public class DevDTO {
 
     @NotNull
     private String birthDate;
+
+    @Enumerated(EnumType.STRING)
+    private ExpertiseArea expertiseArea;
 
     @Valid
     @NotEmpty
