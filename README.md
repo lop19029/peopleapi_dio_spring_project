@@ -3,6 +3,9 @@
 API para Gerenciamento de pessoas utilizando Spring e Java 11.
 Com este API é possivel criar, atualizar, listar, e deletar dados cadastrais de usuario numa base de dados seguindo os padrões de arquitetura REST.
 
+Neste Lab aprendi a utilizar as anotações do SpringBoot, a implementar tecnologias como Lombok e Mapstruct, além de boas praticas para desenvolvimento REST e limpeza de código
+para facilitar a leitura, implementação e manutenção do produto. Mesmo não estando dentro do escopo do Lab, foram implementados teste unitarios para garantir a funcionalidade do produto.
+
 Neste código implementei os principios apliquei os principios aprendidos em sala para criar um API de Gerenciamento de Devs, onde além de salvar seus dados pessoais
 tem a opção de adicionar a sua area de trabalho (Frontend, Backend, ou Fullstack) e também as tecnologias com que trabalham.
 
